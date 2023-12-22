@@ -1,12 +1,26 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { api } from "@/convex/_generated/api";
 import { useUser } from "@clerk/clerk-react";
-import { PlusCircle } from "lucide-react";
+import { useMutation } from "convex/react";
+import { PlusIcon } from "lucide-react";
 import Image from "next/image";
+import { toast } from "sonner";
 
 const Documents = () => {
   const { user } = useUser();
+  const create = useMutation(api.documents.create);
+
+  const onCreate = () => {
+    const promise = create({ title: "Untitled" });
+
+    toast.promise(promise, {
+      loading: "Creating a New Note",
+      success: "New Note Created",
+      error: "Failed to Create a New Note",
+    });
+  };
 
   return (
     <div className="flex h-full flex-col items-center justify-center space-y-4">
@@ -27,8 +41,8 @@ const Documents = () => {
       <h2 className="text-lg font-medium">
         Welcome to {user?.firstName}&apos;s Jotion
       </h2>
-      <Button>
-        <PlusCircle className="mr-2 size-4" />
+      <Button onClick={onCreate}>
+        <PlusIcon className="mr-2 size-4" />
         Create a Note
       </Button>
     </div>
