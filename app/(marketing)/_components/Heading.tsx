@@ -2,7 +2,7 @@
 
 import { Spinner } from "@/components/Spinner";
 import { Button } from "@/components/ui/button";
-import { SignInButton } from "@clerk/clerk-react";
+import { SignInButton, SignUpButton } from "@clerk/clerk-react";
 import { useConvexAuth } from "convex/react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -34,12 +34,12 @@ const Heading = () => {
         </Button>
       )}
       {!isAuthenticated && !isLoading && (
-        <SignInButton mode="modal" afterSignInUrl="/documents">
+        <SignUpButton mode="modal" afterSignInUrl="/documents">
           <Button>
             Get Jotion Free
             <ArrowRight className="ml-2 size-4" />
           </Button>
-        </SignInButton>
+        </SignUpButton>
       )}
     </div>
   );
