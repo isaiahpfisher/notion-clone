@@ -23,15 +23,15 @@ const Navbar = () => {
       <Logo />
 
       <div className="flex w-full items-center justify-between gap-x-2 md:ml-auto md:justify-end">
-        {isLoading && (
-          <Spinner />
-        )}
+        {isLoading && <Spinner />}
         {!isAuthenticated && !isLoading && (
           <>
-            <SignInButton mode="modal">
-              <Button variant={"ghost"} size={"sm"}>Login</Button>
+            <SignInButton mode="modal" afterSignInUrl="/documents">
+              <Button variant={"ghost"} size={"sm"}>
+                Login
+              </Button>
             </SignInButton>
-            <SignInButton mode="modal">
+            <SignInButton mode="modal" afterSignInUrl="/documents">
               <Button size={"sm"}>Get Jotion Free</Button>
             </SignInButton>
           </>
