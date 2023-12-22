@@ -64,7 +64,7 @@ const Item = ({
     toast.promise(promise, {
       loading: "Moving to Trash",
       success: "Note Moved to Trash",
-      error: `Failed to Archive "${label}"`,
+      error: "Failed to Archive Note",
     });
   };
 
