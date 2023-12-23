@@ -53,7 +53,6 @@ export const Banner = ({ documentId }: BannerProps) => {
       <ConfirmModal onConfirm={onRemove}>
         <Button
           size={"sm"}
-          onClick={onRemove}
           variant={"outline"}
           className="border-white bg-transparent p-1 px-2 font-normal text-white hover:bg-primary/5 hover:text-white"
         >
