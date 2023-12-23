@@ -4,7 +4,7 @@ const Heroes = () => {
   return (
     <div className="flex max-w-5xl flex-col items-center justify-center">
       <div className="flex items-center">
-        <div className="relative h-[300px] h-[300px] sm:w-[350px] sm:w-[350px] md:w-[400px] md:w-[400px]">
+        <div className="relative size-[300px] sm:size-[350px] md:size-[400px]">
           <Image
             fill
             src={"/documents.png"}
@@ -18,7 +18,7 @@ const Heroes = () => {
             className="hidden object-contain dark:block"
           />
         </div>
-        <div className="relative hidden h-[400px] w-[400px] md:block">
+        <div className="relative hidden size-[400px] md:block">
           <Image
             fill
             src={"/reading.png"}
