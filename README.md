@@ -1,6 +1,7 @@
 # Jotion (Notion Clone)
 I made this project by following along with [Code with Antonio's tutorial](https://www.youtube.com/watch?v=0OaDyjB9Ib8).
 - Go to the [live version](https://jotion.isaiahpfisher.com).
+- It was made with Next.js and deployed with Vercel.
 ### Things Learned
 I learned the following by building Jotion:
 - I learned the basics of using TypeScript in a React project.
