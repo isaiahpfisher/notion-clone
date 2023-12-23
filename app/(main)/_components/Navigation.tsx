@@ -129,7 +129,7 @@ const Navigation = () => {
     });
 
     toast.promise(promise, {
-      loading: "Creating a New Note",
+      loading: "Creating a New Note...",
       success: "New Note Created",
       error: "Failed to Create a New Note",
     });

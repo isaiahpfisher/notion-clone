@@ -31,7 +31,7 @@ export const Menu = ({ documentId }: MenuProps) => {
     const promise = archive({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Moving to Trash",
+      loading: "Moving to Trash...",
       success: "Note Moved to Trash",
       error: "Failed to Archive Note",
     });

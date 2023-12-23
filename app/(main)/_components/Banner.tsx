@@ -21,7 +21,7 @@ export const Banner = ({ documentId }: BannerProps) => {
     const promise = remove({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Deleting Note",
+      loading: "Deleting Note...",
       success: "Note Deleted",
       error: "Failed to Delete Note",
     });
@@ -33,7 +33,7 @@ export const Banner = ({ documentId }: BannerProps) => {
     const promise = restore({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Restoring Note",
+      loading: "Restoring Note...",
       success: "Note Restored",
       error: "Failed to Restore Note",
     });

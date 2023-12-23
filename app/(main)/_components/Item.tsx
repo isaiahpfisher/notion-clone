@@ -64,7 +64,7 @@ const Item = ({
     });
 
     toast.promise(promise, {
-      loading: "Moving to Trash",
+      loading: "Moving to Trash...",
       success: "Note Moved to Trash",
       error: "Failed to Archive Note",
     });
@@ -91,7 +91,7 @@ const Item = ({
     );
 
     toast.promise(promise, {
-      loading: "Creating a New Note",
+      loading: "Creating a New Note...",
       success: "New Note Created",
       error: "Failed to Create a New Note",
     });
