@@ -3,6 +3,7 @@ I made this project by following along with [Code with Antonio's tutorial](https
 - Go to the [live version](https://jotion.isaiahpfisher.com).
 ### Things Learned
 I learned the following by building Jotion:
+- I learned the basics of using TypeScript in a React project.
 - This is the first project where I felt like I really understood what was going on in the backend.
 - I got more comfortable reading documentation and implementing technologies.
 - I have a greater appreciation for open-source libraries and packages.
