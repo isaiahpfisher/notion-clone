@@ -14,7 +14,7 @@ Jotion uses the following technologies:
 - Convex (database)
 - Clerk (auth)
 - Edgestore (file uploading and storage)
-### Significant Libraries
+### Significant Libraries and Packages
 Jotion uses the following open-source libraries (among others):
 - blocknote (block editor)
 - sonner (toasts)
